@@ -1,0 +1,127 @@
+{
+  "info": {
+    "full_name": {
+      "first_name": "John",
+      "middle_name": "",
+      "last_name": "Doe",
+      "format": {
+        "pattern": "f l",
+        "case": "title"
+      }
+    },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "contact": {
+      "phone": "+60123456789",
+      "email": "johndoe@example.com",
+      "website": "https://example.com"
+    }
+  },
+  "experiences": [
+    {
+      "role": "Mauris ut viverra nulla",
+      "company": "Donec a dapibus odio",
+      "date": {
+        "begin": "2018",
+        "end": "2020"
+      },
+      "description": ["Quisque efficitur mattis lobortis. Aliquam quis rhoncus enim, sit amet fringilla dolor. Nulla diam felis, scelerisque eget risus quis, efficitur consectetur velit. Vestibulum a consectetur enim. Donec sit amet interdum lorem. Nullam sit amet lacus ante. Donec ultricies, urna ut sollicitudin scelerisque, magna lectus facilisis orci, in bibendum mi sapien luctus ipsum."]
+    },
+    {
+      "role": "Mauris ut viverra nulla",
+      "company": "Donec a dapibus odio",
+      "date": {
+        "begin": "2020",
+        "end": "2021"
+      },
+      "description": ["Etiam quam lectus, molestie non interdum id, rhoncus ullamcorper ligula.", "Donec vel molestie nibh. Nullam vel odio at nisi euismod ultricies.", "Integer fringilla faucibus aliquam.", "In dapibus venenatis sem id sagittis.", "Quisque ultricies pretium justo."]
+    },
+    {
+      "role": "Mauris ut viverra nulla",
+      "company": "Donec a dapibus odio",
+      "date": {
+        "begin": "2017",
+        "end": "2018"
+      },
+      "description": []
+    },
+    {
+      "role": "Mauris ut viverra nulla",
+      "company": "Donec a dapibus odio",
+      "date": {
+        "begin": "2020",
+        "end": "2021"
+      },
+      "description": ["Etiam quam lectus, molestie non interdum id, rhoncus ullamcorper ligula.", "Donec vel molestie nibh. Nullam vel odio at nisi euismod ultricies.", "Integer fringilla faucibus aliquam.", "In dapibus venenatis sem id sagittis.", "Quisque ultricies pretium justo."]
+    }
+  ],
+  "education": [
+    {
+      "field": "Praesent ut arcu nulla",
+      "institution": "Aliquam ut dignissim massa",
+      "date": {
+        "begin": "2014",
+        "end": "2017"
+      }
+    },
+    {
+      "field": "Praesent ut arcu nulla",
+      "institution": "Aliquam ut dignissim massa",
+      "date": {
+        "begin": "2013",
+        "end": "2014"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "name": "Donec a dapibus odio",
+      "link": "https://yiyiu.dev",
+      "stacks": ["Electron", "HTML5", "CSS3", "JS", "TailwindCSS"],
+      "description": ["Praesent facilisis nisi orci, non lobortis odio faucibus ac.", "Interdum et malesuada fames ac ante ipsum primis in faucibus.", "Etiam rhoncus tortor nec nisl convallis ullamcorper.", "Aliquam sed vestibulum turpis, eu scelerisque ipsum.", "Curabitur vulputate tortor lorem, consectetur ultrices nulla tempor id."]
+    },
+    {
+      "name": "Donec a dapibus odio",
+      "link": "",
+      "stacks": ["Electron", "HTML5", "CSS3", "JS", "TailwindCSS"],
+      "description": []
+    },
+    {
+      "name": "Donec a dapibus odio",
+      "link": "https://yiyiu.dev",
+      "stacks": ["Python"],
+      "description": ["Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque ut erat diam. Fusce finibus ac tellus eget luctus. Sed varius viverra faucibus."]
+    },
+    {
+      "name": "Donec a dapibus odio",
+      "link": "https://yiyiu.dev",
+      "stacks": ["HTML5", "CSS3", "JS"],
+      "description": ["Praesent facilisis nisi orci, non lobortis odio faucibus ac.", "Interdum et malesuada fames ac ante ipsum primis in faucibus.", "Etiam rhoncus tortor nec nisl convallis ullamcorper.", "Aliquam sed vestibulum turpis, eu scelerisque ipsum.", "Curabitur vulputate tortor lorem, consectetur ultrices nulla tempor id."]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Nunc quis pellentesque velit",
+      "issuer": "Aenean vitae ante mi",
+      "date": {
+        "issued": "2018",
+        "expiry": ""
+      }
+    },
+    {
+      "name": "Nunc quis pellentesque velit",
+      "issuer": "Aenean vitae ante mi",
+      "date": {
+        "issued": "2018",
+        "expiry": "2021"
+      }
+    },
+    {
+      "name": "Nunc quis pellentesque velit",
+      "issuer": "Aenean vitae ante mi",
+      "date": {
+        "issued": "2018",
+        "expiry": ""
+      }
+    }
+  ]
+}

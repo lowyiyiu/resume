@@ -1,0 +1,67 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body class="py-16 px-12 mx-auto max-w-5xl bg-gray-100 dark:bg-gray-900 dark:print:bg-gray-100 print:p-6 transition-all duration-200">
+    <header class="mb-12 flex flex-wrap space-y-2 justify-between">
+      <div>
+        <h1 class="text-2xl font-semibold text-gray-700 dark:text-gray-100 dark:print:text-gray-700 print:text-lg mb-1" id="full_name"></h1>
+        <h3 class="leading-normal text-gray-600 dark:text-gray-200 dark:print:text-gray-600 print:text-xs mb-2" id="description"></h3>
+        <p class="leading-normal text-gray-600 dark:text-gray-200 dark:print:text-gray-600 print:text-xs" id="contact"></p>
+      </div>
+      <div class="flex flex-row items-center space-x-3">
+        <button type="button" onclick="window.print();" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700 dark:text-gray-200 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 print:hidden">Print / Download Resume</button>
+        <button type="button" onclick="document.documentElement.classList.toggle('dark');" class="inline-flex items-center px-2 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-gray-700 dark:text-gray-200 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 print:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="columns-xs gap-16 lg:gap-24 space-y-12 print:columns-2xs print:gap-16 print:space-y-8">
+      <div class="break-inside-avoid">
+        <h2 class="font-bold tracking-widest text-sm text-gray-500 dark:text-gray-300 dark:print:text-gray-500 mb-4 print:text-xs">EXPERIENCES</h2>
+        <div class="grid gap-6 print:gap-3" id="experiences"></div>
+      </div>
+
+      <div class="break-inside-avoid">
+        <h2 class="font-bold tracking-widest text-sm text-gray-500 dark:text-gray-300 dark:print:text-gray-500 mb-4 print:text-xs">EDUCATION</h2>
+        <div class="grid gap-5 print:gap-3" id="education"></div>
+      </div>
+
+      <div class="break-inside-avoid">
+        <h2 class="font-bold tracking-widest text-sm text-gray-500 dark:text-gray-300 dark:print:text-gray-500 mb-4 print:text-xs">PROJECTS</h2>
+        <div class="grid gap-6 print:gap-3" id="projects"></div>
+      </div>
+
+      <div class="break-inside-avoid">
+        <h2 class="font-bold tracking-widest text-sm text-gray-500 dark:text-gray-300 dark:print:text-gray-500 mb-4 print:text-xs">CERTIFICATIONS</h2>
+        <div class="grid gap-5 print:gap-3" id="certifications"></div>
+      </div>
+    </main>
+
+    <template id="template">
+      <div class="grid gap-2">
+        <div>
+          <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-200 dark:print:text-gray-700 flex group print:text-sm">
+            <span class="group-hover:text-gray-500" id="template_heading"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 pl-1 my-auto text-gray-500 dark:text-gray-400 dark:print:text-gray-500 group-hover:cursor-pointer print:hidden" id="template_external" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400 dark:print:text-gray-600 text-sm print:text-xs" id="template_subheading"></p>
+        </div>
+        <p class="text-gray-700 dark:text-gray-300 dark:print:text-gray-700 leading-snug text-justify print:text-xs" id="template_description"></p>
+      </div>
+    </template>
+  </body>
+</html>
