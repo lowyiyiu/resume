@@ -102,10 +102,61 @@ window.onload = () => {
       renderFullName(data.info.full_name);
       renderDescription(data.info.description);
       renderContact(data.info.contact);
-      renderExperiences(data.experiences);
-      renderEducation(data.education);
-      renderProjects(data.projects);
-      renderCertifications(data.certifications);
+
+      if ('experiences' in data) {
+        // {
+        //   "role": "",
+        //   "company": "",
+        //   "date": {
+        //     "begin": "",
+        //     "end": ""
+        //   },
+        //   "description": [""]
+        // }
+        renderExperiences(data.experiences);
+      } else {
+        document.querySelector('#experiences').parentElement.remove();
+      }
+
+      if ('education' in data) {
+        // {
+        //   "field": "",
+        //   "institution": "",
+        //   "date": {
+        //     "begin": "",
+        //     "end": ""
+        //   }
+        // }
+        renderEducation(data.education);
+      } else {
+        document.querySelector('#education').parentElement.remove();
+      }
+
+      if ('projects' in data) {
+        // {
+        //   "name": "",
+        //   "link": "",
+        //   "stacks": [""],
+        //   "description": [""]
+        // }
+        renderProjects(data.projects);
+      } else {
+        document.querySelector('#projects').parentElement.remove();
+      }
+
+      if ('certifications' in data) {
+        // {
+        //   "name": "",
+        //   "issuer": "",
+        //   "date": {
+        //     "issued": "",
+        //     "expiry": ""
+        //   }
+        // }
+        renderCertifications(data.certifications);
+      } else {
+        document.querySelector('#certifications').parentElement.remove();
+      }
     })
     .catch((error) => alert(error));
 };
